@@ -12,7 +12,7 @@ export class Hand {
   }
 
   get handValue(): number {
-    const sorted = this.cards.sort((cardA, cardB) => {
+    const sorted = [...this.cards].sort((cardA, cardB) => {
       const cardAVal = cardA.value;
       const cardBVal = cardB.value;
       if (cardAVal === 'ACE') return 1;
