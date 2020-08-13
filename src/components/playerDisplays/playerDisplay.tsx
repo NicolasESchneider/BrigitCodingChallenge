@@ -1,6 +1,10 @@
 import * as React from 'react';
 import { Hand } from '../../types/hand';
-
+// player has 2 actions
+// // hit
+// // stand
+// cannot hit if bust
+// cannot either post standing
 interface PlayerProps {
   hand: Hand;
   isHouse?: boolean;
